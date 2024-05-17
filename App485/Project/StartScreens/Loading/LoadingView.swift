@@ -12,12 +12,15 @@ struct LoadingView: View {
 
         ZStack {
             
-            Color("lbg")
+            Color("black")
                 .ignoresSafeArea()
             
             VStack {
                 
                 Image("llogo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 150, height: 150)
 
                 ProgressView()
                     .padding(.top, 60)
